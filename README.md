@@ -25,7 +25,16 @@ This script automate adding new user with random password to pwsafe database.
  * run script
 
  ```
- ./pwsafe.py .pwsafe.dat username
+ ./pwsafe.py /root/.pwsafe.dat testuser
+ User   testuser    was created in pwsafe.
+ ```
+
+ * verify
+ 
+ ```
+ pwsafe -f /root/.pwsafe.dat --exportdb | grep testuser
+ Enter passphrase for /root/.pwsafe.dat: 
+ "3a8f23ed-3e5d-a76e-e996-633a6a33b23d"	"admin"	"testuser"	"testuser"	"dqLeEQI9GMP7"	"admin user"
  ```
 
 ## How to list all information from db pwsafe.
@@ -45,7 +54,7 @@ uuid	group	name	login	passwd	notes
 ```bash
 alternative command is:
 #alternative command is:
-pwsafe -f /root/.pwsafe.dat --add %s" % newuser
+pwsafe -f /root/.pwsafe.dat --list newuser
 ```
 
 ## How to add new user.
