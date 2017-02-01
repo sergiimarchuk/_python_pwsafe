@@ -4,11 +4,13 @@ This script automate adding new user with random password to pwsafe database.
 
 ## How to install:
 
- * install pwsafe 
+ * install pwsafe
+ 
  ```
- yum -y install pwsafe 
+ wget -c "http://li.nux.ro/download/nux/dextop/el7/x86_64/pwsafe-0.2.0-18.el7.nux.x86_64.rpm" && yum install pwsafe-0.2.0-18.el7.nux.x86_64.rpm -y
  ```
- * created db file pwsafe
+
+* created db file pwsafe
  * install python module pexpect
  * run script
 
