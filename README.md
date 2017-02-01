@@ -17,6 +17,11 @@ This script automate adding new user with random password to pwsafe database.
  ```
 
 * install python module pexpect
+
+```
+yum install pexpect
+```
+
 * run script
 
 ## How to list all information from db pwsafe.
