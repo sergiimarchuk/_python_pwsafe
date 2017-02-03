@@ -2,7 +2,7 @@
 
 This script automate adding new user with random password to pwsafe database.
 
-## How to install:
+## How to install and use:
 
  * install pwsafe
  
@@ -37,11 +37,6 @@ This script automate adding new user with random password to pwsafe database.
  "3a8f23ed-3e5d-a76e-e996-633a6a33b23d"	"admin"	"testuser"	"testuser"	"dqLeEQI9GMP7"	"admin user"
  ```
 
-
-## How to add new user.
-```bash
-pwsafe -f /root/.pwsafe.dat --add newuser
-```
 
 
 
